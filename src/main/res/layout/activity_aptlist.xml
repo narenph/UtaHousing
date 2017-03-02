@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pencil">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Apply"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginBottom="10dp"/>
+
+    <Button  android:layout_marginTop="50dp"
+        android:id="@+id/btnSubmit"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1499A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

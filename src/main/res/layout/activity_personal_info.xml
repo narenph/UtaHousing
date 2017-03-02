@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pencil">
+
+    <TextView
+        android:id="@+id/stuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/stuDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuName"
+        android:layout_below="@+id/stuName"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="DOB" />
+
+    <TextView
+        android:id="@+id/stuAdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuDOB"
+        android:layout_below="@+id/stuDOB"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:ellipsize="marquee"
+        android:text="Local Address" />
+
+    <TextView
+        android:id="@+id/stuPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuAdr"
+        android:layout_below="@+id/stuAdr"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/stuEmergency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuPhone"
+        android:layout_below="@+id/stuPhone"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="Emergency Contact Details" />
+
+    <TextView
+        android:id="@+id/stuEmrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuEmergency"
+        android:layout_below="@+id/stuEmergency"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/stuEmrRel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuEmrName"
+        android:layout_below="@+id/stuEmrName"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="Relation" />
+
+    <TextView
+        android:id="@+id/stuEmrPh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stuEmrRel"
+        android:layout_below="@+id/stuEmrRel"
+        android:textColor="#09121A"
+        android:layout_marginTop="40dp"
+        android:text="Phone Number" />
+
+    <EditText
+        android:id="@+id/editStuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editStuDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuDOB"
+        android:layout_alignParentRight="true"
+        android:textColor="#09121A"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editStuAdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuAdr"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editStuPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuPhone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editStuEmrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuEmrName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:ems="8"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editStuEmrRel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuEmrRel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="text" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editStuEmrPh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stuEmrPh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="phone" >
+    </EditText>
+
+    <Button android:layout_marginTop="15dp"
+        android:id="@+id/signUpButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/stuEmrPh"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1499A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:layout_toRightOf="@+id/stuEmrPh" />
+</RelativeLayout>

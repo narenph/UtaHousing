@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pencil">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Register"
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/signUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#09121A"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/signUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUpName"
+        android:layout_below="@+id/signUpName"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/signUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUpEmail"
+        android:layout_below="@+id/signUpEmail"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/signUpConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUpPassword"
+        android:layout_below="@+id/signUpPassword"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:ellipsize="marquee"
+        android:text="Confirm Password" />
+
+
+
+    <TextView
+        android:id="@+id/signNetId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUpConfirmPassword"
+        android:layout_below="@+id/signUpConfirmPassword"
+        android:layout_marginTop="40dp"
+        android:textColor="#09121A"
+        android:text="Net ID" />
+
+    <EditText
+        android:id="@+id/editSignUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signUpName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editSignUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signUpEmail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:hint="email@mavs.uta.edu" />
+
+    <EditText
+        android:id="@+id/editSignUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signUpPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editSignUpConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signUpConfirmPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editNetId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signNetId"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#09121A"
+        android:ems="8"
+        android:inputType="text" >
+    </EditText>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:text="Sign Up"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1499A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/editNetId"
+        android:layout_toRightOf="@+id/signUpConfirmPassword"
+        android:layout_toEndOf="@+id/signUpConfirmPassword" />
+</RelativeLayout>
